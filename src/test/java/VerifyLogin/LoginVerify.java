@@ -1,5 +1,7 @@
 package VerifyLogin;
 import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -37,7 +39,7 @@ public class LoginVerify  {
 		xl.close();
 	}
 	
-	@Test (priority = 7)
+	@Test (priority = 8)
 	public void validIdPass() 
 	{
 		try 
@@ -51,7 +53,7 @@ public class LoginVerify  {
 		System.out.println(loginutility.doGetCurrentUrl());
 		Assert.assertTrue(loginutility.doGetCurrentUrl().equals(exp_url));
 	}
-	@Test (priority = 6)
+	@Test (priority = 7)
 	public void invalidId() 
 	{
 		try {
@@ -72,7 +74,7 @@ public class LoginVerify  {
 		}
 		
 	}
-	@Test (priority = 5)
+	@Test (priority = 6)
 	public void invalidPass() 
 	{
 		try {
@@ -92,7 +94,7 @@ public class LoginVerify  {
 		}
 
 	}
-	@Test (priority = 4)
+	@Test (priority = 5)
 	public void invalidIdPass() 
 	{
 		try {
@@ -113,7 +115,7 @@ public class LoginVerify  {
 		}
 		
 	}
-	@Test (priority = 3)
+	@Test (priority = 4)
 	public void blankId() 
 	{
 		try {
@@ -125,7 +127,7 @@ public class LoginVerify  {
 		loginutility.doClick(By.xpath("//button[@type='submit']"));
 		Assert.assertTrue(loginutility.doFindElement(By.xpath("//span[text()='Required']")).isDisplayed());
 	}
-	@Test (priority = 2)
+	@Test (priority = 3)
 	public void blankPass() 
 	{
 		try {
@@ -140,9 +142,25 @@ public class LoginVerify  {
 		
 	}
 	@Test(priority = 1)
-	public void checkLinks() throws IOException 
+	public void doCheckForgotPasswordLink() 
+	{
+		String exp_url="https://opensource-demo.orangehrmlive.com/web/index.php/auth/requestPasswordResetCode";
+		loginutility.doClick(By.xpath("//p[text()='Forgot your password? '] "));
+		if (loginutility.doGetCurrentUrl().equals(exp_url)) 
+		{
+			loginutility.doClick(By.xpath("//button[text()=' Cancel ']"));
+			if (loginutility.doGetCurrentUrl().equals("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")) Assert.assertTrue(true);
+		}
+		else 
+		{
+			Assert.fail();
+		}
+	}
+	@Test(priority = 2)
+	public void checkLinks() throws IOException, URISyntaxException 
 	{
 		String pw= loginutility.doGetParentWindow();
+		URI uri;
 		URL url;
 		List<String> urlsList= new ArrayList<>();
 		int i=0;
@@ -162,7 +180,8 @@ public class LoginVerify  {
 			}
 			else 
 			{
-				url= new URL(loginutility.doGetCurrentUrl());
+				uri= new URI(loginutility.doGetCurrentUrl());
+				url= uri.toURL();
 				String hostnameString= url.getHost().replace('.', '_');
 				ss.takeSS(hostnameString);
 				loginutility.close();
