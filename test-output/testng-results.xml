@@ -1,25 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-16T19:35:11 IST" name="Default suite" finished-at="2026-04-16T19:35:28 IST" duration-ms="17045">
+  <suite started-at="2026-04-28T20:27:33 IST" name="Default suite" finished-at="2026-04-28T20:30:55 IST" duration-ms="202541">
     <groups>
     </groups>
-    <test started-at="2026-04-16T19:35:11 IST" name="Default test" finished-at="2026-04-16T19:35:28 IST" duration-ms="17045">
-      <class name="VerifyLogin.LoginVerify">
-        <test-method is-config="true" signature="setup()[pri:0, instance:VerifyLogin.LoginVerify@243c4f91]" started-at="2026-04-16T19:35:11 IST" name="setup" finished-at="2026-04-16T19:35:26 IST" duration-ms="14660" status="PASS">
+    <test started-at="2026-04-28T20:27:33 IST" name="Default test" finished-at="2026-04-28T20:30:55 IST" duration-ms="202541">
+      <class name="SideBar.CheckSideBar">
+        <test-method is-config="true" signature="setup()[pri:0, instance:SideBar.CheckSideBar@5119fb47]" started-at="2026-04-28T20:27:33 IST" name="setup" finished-at="2026-04-28T20:27:35 IST" duration-ms="2335" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="doCheckForgotPasswordLink()[pri:1, instance:VerifyLogin.LoginVerify@243c4f91]" started-at="2026-04-16T19:35:26 IST" name="doCheckForgotPasswordLink" finished-at="2026-04-16T19:35:28 IST" duration-ms="2032" status="PASS">
+        <test-method is-config="true" signature="Initialize()[pri:0, instance:SideBar.CheckSideBar@5119fb47]" started-at="2026-04-28T20:27:35 IST" name="Initialize" finished-at="2026-04-28T20:27:56 IST" duration-ms="20916" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doCheckForgotPasswordLink -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:VerifyLogin.LoginVerify@243c4f91]" started-at="2026-04-16T19:35:28 IST" name="teardown" finished-at="2026-04-16T19:35:28 IST" duration-ms="302" status="PASS">
+        </test-method> <!-- Initialize -->
+        <test-method signature="checkArrow()[pri:0, instance:SideBar.CheckSideBar@5119fb47]" started-at="2026-04-28T20:27:56 IST" name="checkArrow" finished-at="2026-04-28T20:28:16 IST" duration-ms="19792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkArrow -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:SideBar.CheckSideBar@5119fb47]" started-at="2026-04-28T20:28:16 IST" name="teardown" finished-at="2026-04-28T20:28:17 IST" duration-ms="641" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- VerifyLogin.LoginVerify -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:SideBar.CheckSideBar@5119fb47]" started-at="2026-04-28T20:28:17 IST" name="setup" finished-at="2026-04-28T20:28:18 IST" duration-ms="1519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="Initialize()[pri:0, instance:SideBar.CheckSideBar@5119fb47]" started-at="2026-04-28T20:28:18 IST" name="Initialize" finished-at="2026-04-28T20:28:27 IST" duration-ms="8968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Initialize -->
+        <test-method signature="checkAllOptions()[pri:2, instance:SideBar.CheckSideBar@5119fb47]" started-at="2026-04-28T20:28:27 IST" name="checkAllOptions" finished-at="2026-04-28T20:30:55 IST" duration-ms="147654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAllOptions -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:SideBar.CheckSideBar@5119fb47]" started-at="2026-04-28T20:30:55 IST" name="teardown" finished-at="2026-04-28T20:30:55 IST" duration-ms="656" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- SideBar.CheckSideBar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -19,7 +19,7 @@ public class LoginUtility {
  WebDriverWait wait;
  JavascriptExecutor js;
 
-	LoginUtility ()
+	public LoginUtility ()
 	{	
 		options = new ChromeOptions();
 		doDisableChromeNotifs();
