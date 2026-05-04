@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SideBar.CheckSideBar">
+      <class name="SearchEmployee.SearchEmployeeResult">
         <methods>
-          <include name="checkAllOptions"/>
           <include name="Initialize"/>
           <include name="teardown"/>
+          <include name="addEmployee"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- SideBar.CheckSideBar -->
+      </class> <!-- SearchEmployee.SearchEmployeeResult -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

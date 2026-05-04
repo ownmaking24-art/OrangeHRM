@@ -42,7 +42,7 @@ public class CheckSideBar extends BaseClass{
 	@Test (priority = 0)
 	public void checkArrow() 
 	{
-	//	loginBase.login("Admin", "admin123");
+	
 		int count=0;
 		baseUtility.doClick(By.xpath("//button[contains(@class,'oxd-main-menu-button')]"));
 		if (baseUtility.doFindElements(By.xpath("//input[contains(@class,'toggled')]")).size()>0) count++;

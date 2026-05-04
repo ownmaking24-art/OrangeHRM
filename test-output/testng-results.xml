@@ -1,45 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-28T20:27:33 IST" name="Default suite" finished-at="2026-04-28T20:30:55 IST" duration-ms="202541">
+  <suite started-at="2026-05-04T22:59:10 IST" name="Default suite" finished-at="2026-05-04T22:59:46 IST" duration-ms="36448">
     <groups>
     </groups>
-    <test started-at="2026-04-28T20:27:33 IST" name="Default test" finished-at="2026-04-28T20:30:55 IST" duration-ms="202541">
-      <class name="SideBar.CheckSideBar">
-        <test-method is-config="true" signature="setup()[pri:0, instance:SideBar.CheckSideBar@5119fb47]" started-at="2026-04-28T20:27:33 IST" name="setup" finished-at="2026-04-28T20:27:35 IST" duration-ms="2335" status="PASS">
+    <test started-at="2026-05-04T22:59:10 IST" name="Default test" finished-at="2026-05-04T22:59:46 IST" duration-ms="36448">
+      <class name="SearchEmployee.SearchEmployeeResult">
+        <test-method is-config="true" signature="setup()[pri:0, instance:SearchEmployee.SearchEmployeeResult@3835c46]" started-at="2026-05-04T22:59:10 IST" name="setup" finished-at="2026-05-04T22:59:12 IST" duration-ms="2236" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="Initialize()[pri:0, instance:SideBar.CheckSideBar@5119fb47]" started-at="2026-04-28T20:27:35 IST" name="Initialize" finished-at="2026-04-28T20:27:56 IST" duration-ms="20916" status="PASS">
+        <test-method is-config="true" signature="Initialize()[pri:0, instance:SearchEmployee.SearchEmployeeResult@3835c46]" started-at="2026-05-04T22:59:12 IST" name="Initialize" finished-at="2026-05-04T22:59:26 IST" duration-ms="14654" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Initialize -->
-        <test-method signature="checkArrow()[pri:0, instance:SideBar.CheckSideBar@5119fb47]" started-at="2026-04-28T20:27:56 IST" name="checkArrow" finished-at="2026-04-28T20:28:16 IST" duration-ms="19792" status="PASS">
+        <test-method signature="addEmployee()[pri:0, instance:SearchEmployee.SearchEmployeeResult@3835c46]" started-at="2026-05-04T22:59:26 IST" name="addEmployee" finished-at="2026-05-04T22:59:46 IST" duration-ms="19118" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkArrow -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:SideBar.CheckSideBar@5119fb47]" started-at="2026-04-28T20:28:16 IST" name="teardown" finished-at="2026-04-28T20:28:17 IST" duration-ms="641" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:SideBar.CheckSideBar@5119fb47]" started-at="2026-04-28T20:28:17 IST" name="setup" finished-at="2026-04-28T20:28:18 IST" duration-ms="1519" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="Initialize()[pri:0, instance:SideBar.CheckSideBar@5119fb47]" started-at="2026-04-28T20:28:18 IST" name="Initialize" finished-at="2026-04-28T20:28:27 IST" duration-ms="8968" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Initialize -->
-        <test-method signature="checkAllOptions()[pri:2, instance:SideBar.CheckSideBar@5119fb47]" started-at="2026-04-28T20:28:27 IST" name="checkAllOptions" finished-at="2026-04-28T20:30:55 IST" duration-ms="147654" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkAllOptions -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:SideBar.CheckSideBar@5119fb47]" started-at="2026-04-28T20:30:55 IST" name="teardown" finished-at="2026-04-28T20:30:55 IST" duration-ms="656" status="PASS">
+        </test-method> <!-- addEmployee -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:SearchEmployee.SearchEmployeeResult@3835c46]" started-at="2026-05-04T22:59:46 IST" name="teardown" finished-at="2026-05-04T22:59:46 IST" duration-ms="397" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- SideBar.CheckSideBar -->
+      </class> <!-- SearchEmployee.SearchEmployeeResult -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
